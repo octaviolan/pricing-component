@@ -1,0 +1,62 @@
+.pricing-header {
+  /* border: 1px solid red; */
+  inline-size: 15.93rem;
+  margin: 4.26rem auto 5.33rem auto;
+}
+
+.pricing-header h1 {
+  font: var(--heading1);
+  margin-block-start: 0;
+  margin-block-end: 2.66rem;
+  color: var(--darkGrayishBlue);
+  text-align: center;
+}
+
+.pricing-header .plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.pricing-header span {
+  color: var(--lightGrayishBlue);
+}
+
+.form-check {
+  /* border: 1px solid red; */
+  /* display: inline-block; */
+}
+
+.form-check .form-check-input {
+  display: none;
+}
+
+.form-check .form-check-label {
+  inline-size: 3.73rem;
+  block-size: 2.13rem;
+  display: block;
+  background: var(--linearGradient);
+  border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+  pointer-events: inherit;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.form-check .form-check-label::before {
+  content: '';
+  position: absolute;
+  inset-inline-end: 0.26rem;
+  inset-block-start: 0.26rem;
+  inline-size: 1.6rem;
+  block-size: 1.6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+ 
+}
+
+.form-check .form-check-input:checked ~ .form-check-label::before {
+  inset-inline-end: 1.8rem;
+}

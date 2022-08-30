@@ -1,4 +1,28 @@
-body {
-  height: 100vh;
-  background: linear-gradient(90deg, red, hsl(237, 63%, 64%));
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import './pricing-header.css';
+
+:root {
+  /* Colors */
+  --linearGradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --veryLightGrayishBlue: hsl(240, 78%, 98%);
+  --lightGrayishBlue: hsl(234, 14%, 74%);
+  --grayishBlue: hsl(233, 13%, 49%);
+  --darkGrayishBlue: hsl(232, 13%, 33%);
+  /* font */
+  font-size: 15px;
+  --baseFontFamily: 'Montserrat', sans-serif;
+  --heading1: bold 2.13rem/2.6rem var(--baseFontFamily);
+  --title: bold 1.2rem/1.86rem var(--baseFontFamily);
+  --baseFont: bold 1rem/1.86rem var(--baseFontFamily);
+  --price: bold 4.8rem/4.73rem var(--baseFontFamily);
+  --button: bold 0.86rem/0.95rem var(--baseFontFamily);
 }
+
+
+body {
+  margin: 0;
+  background: var(--veryLightGrayishBlue);
+  font: var(--baseFont);
+}
+
+
