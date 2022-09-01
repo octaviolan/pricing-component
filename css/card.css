@@ -1,0 +1,55 @@
+.card-container {
+  outline: 1px solid red;
+  inline-size: 327px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card {
+  outline: 1px solid blue;
+  padding: 31px 29px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+}
+
+.card-header h4 {
+  margin: 0;
+  font: var(--title);
+  text-align: center;
+  color: var(--grayishBlue);
+}
+.card-title {
+  margin-block-start: 24px;
+  margin-block-end: 32px;
+  font: var(--dollar);
+  color: var(--darkGrayishBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7.46px;
+}
+
+.card-title span {
+  font: var(--price);
+  letter-spacing: -1.2px;
+}
+
+.list-feature {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.list-feature li {
+  padding: 12px 0;
+  color: var(--grayishBlue);
+  text-align: center;
+  border-top: 1px solid var(--lightGrayishBlue);
+}
+
+.list-feature li:last-child {
+  border-bottom: 1px solid var(--lightGrayishBlue);
+}

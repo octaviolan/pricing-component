@@ -1,0 +1,20 @@
+.btn {
+  display: block;
+  width: 100%;
+  margin-block-start: 32px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 6px;
+  background: var(--linearGradient);
+  color: #fff;
+  font: var(--button);
+  text-transform: uppercase;
+  letter-spacing: 1.39px;
+  cursor: pointer;
+  transition: transform 0.1s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.btn:active {
+  transform: scale(0.99);
+}
