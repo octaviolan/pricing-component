@@ -1,18 +1,22 @@
 .card-container {
-  outline: 1px solid red;
-  inline-size: 327px;
+  inline-size: 21.8rem;
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2.13rem;
+  margin-block-end: 4.73rem
 }
 
 .card {
-  outline: 1px solid blue;
-  padding: 31px 29px;
+  padding: 2.07rem 1.93rem;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 0.66rem;
   box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+}
+
+.card:nth-child(even) {
+  background: var(--linearGradient);
+  color: var(--white);
 }
 
 .card-header h4 {
@@ -21,15 +25,16 @@
   text-align: center;
   color: var(--grayishBlue);
 }
+
 .card-title {
-  margin-block-start: 24px;
-  margin-block-end: 32px;
+  margin-block-start: 1.6rem;
+  margin-block-end: 2.13rem;
   font: var(--dollar);
   color: var(--darkGrayishBlue);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7.46px;
+  gap: 0.5rem;
 }
 
 .card-title span {
@@ -44,12 +49,26 @@
 }
 
 .list-feature li {
-  padding: 12px 0;
+  padding: 0.8rem 0;
   color: var(--grayishBlue);
   text-align: center;
   border-top: 1px solid var(--lightGrayishBlue);
 }
 
 .list-feature li:last-child {
+  border-bottom: 1px solid var(--lightGrayishBlue);
+}
+
+.card:nth-child(even) .card-header h4,
+.card:nth-child(even) .card-title,
+.card:nth-child(even) .list-feature li {
+  color: inherit;
+}
+
+.card:nth-child(even) .list-feature li {
+  border-top: 1px solid var(--lightGrayishBlue);
+}
+
+.card:nth-child(even) .list-feature li:last-child {
   border-bottom: 1px solid var(--lightGrayishBlue);
 }

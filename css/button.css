@@ -1,20 +1,38 @@
 .btn {
   display: block;
   width: 100%;
-  margin-block-start: 32px;
-  padding: 14px 0;
-  border: none;
-  border-radius: 6px;
+  margin-block-start: 2.13rem;
+  padding: 0.93rem 0;
+  border: 1px solid var(--white);
+  border-radius: 0.4rem;
   background: var(--linearGradient);
-  color: #fff;
+  color: var(--white);
   font: var(--button);
   text-transform: uppercase;
-  letter-spacing: 1.39px;
+  letter-spacing: 0.093rem;
   cursor: pointer;
   transition: transform 0.1s;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.btn:hover {
+  background: transparent;
+  color: var(--secundaryColor);
+  border: 1px solid var(--secundaryColor);
+}
+
+.btn.btn-secundary {
+  background: var(--white);
+  color: var(--secundaryColor);
+}
+
+.btn.btn-secundary:hover {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
 .btn:active {
   transform: scale(0.99);
 }
+

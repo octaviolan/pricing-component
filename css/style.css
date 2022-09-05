@@ -10,6 +10,8 @@
   --lightGrayishBlue: hsl(234, 14%, 74%);
   --grayishBlue: hsl(233, 13%, 49%);
   --darkGrayishBlue: hsl(232, 13%, 33%);
+  --white: #ffffff;
+  --secundaryColor: hsl(237, 63%, 64%);
   /* font */
   font-size: 15px;
   --baseFontFamily: 'Montserrat', sans-serif;
@@ -24,8 +26,10 @@
 
 body {
   margin: 0;
-  background: var(--veryLightGrayishBlue);
+  /* background-color: var(--veryLightGrayishBlue); */
+  background: url('../images/bg-top.svg') no-repeat right -190px top -30px, var(--veryLightGrayishBlue);
   font: var(--baseFont);
+  border: 1px solid red;
 }
 
 
