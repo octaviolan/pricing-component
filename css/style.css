@@ -29,7 +29,18 @@ body {
   /* background-color: var(--veryLightGrayishBlue); */
   background: url('../images/bg-top.svg') no-repeat right -190px top -30px, var(--veryLightGrayishBlue);
   font: var(--baseFont);
-  border: 1px solid red;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 100vh;
+    background: url('../images/bg-bottom.svg') no-repeat left bottom, url('../images/bg-top.svg') no-repeat right top -50px, var(--veryLightGrayishBlue);
+  }
 }
 
 
