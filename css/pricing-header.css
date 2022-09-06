@@ -28,6 +28,7 @@
 }
 
 .form-check-label {
+  --right-pseudo: 0.26rem;
   inline-size: 3.73rem;
   block-size: 2.13rem;
   display: block;
@@ -46,18 +47,13 @@
 .form-check-label::before {
   content: '';
   position: absolute;
-  inset-inline-end: 0.26rem;
+  inset-inline-end: var(--right-pseudo);
   inset-block-start: 0.26rem;
   inline-size: 1.6rem;
   block-size: 1.6rem;
   background-color: #fff;
   border-radius: 50%;
   transition: 0.3s;
- 
-}
-
-.form-check .form-check-input:checked ~ .form-check-label::before {
-  inset-inline-end: 1.8rem;
 }
 
 @media screen and (min-width: 1024px) {
